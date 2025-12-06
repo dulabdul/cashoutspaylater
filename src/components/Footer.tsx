@@ -50,19 +50,6 @@ export default function Footer() {
               </div>
               <span>WhatsApp Admin</span>
             </a>
-            <a
-              href={BRAND_CONFIG.links.instagram}
-              target='_blank'
-              rel='noreferrer'
-              className='flex items-center gap-3 text-gray-400 hover:text-white group'>
-              <div className='bg-pink-600 p-2 rounded-full group-hover:scale-110 transition'>
-                <Instagram
-                  size={20}
-                  className='text-white'
-                />
-              </div>
-              <span>@cashoutspaylatermy</span>
-            </a>
           </div>
         </div>
       </div>
