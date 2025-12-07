@@ -10,19 +10,19 @@ const DOMAIN = 'https://cashoutspaylatermy.net';
 export const metadata: Metadata = {
   metadataBase: new URL(DOMAIN),
   title: {
-    default: 'Jasa Gestun Shopee PayLater & Cashout Terpercaya | CashoutMy',
+    default: 'Servis Tunaikan Shopee PayLater & Cashout Dipercayai | CashoutMy',
     template: '%s | CashoutMy',
   },
   description:
-    'Layanan pencairan limit ShopeePay Later, Grab PayLater, dan Boost PayFlex kilat. Proses aman, rate rendah, dan cair dalam hitungan menit. Hubungi kami sekarang!',
+    'Servis tunaikan had ShopeePay Later, Grab PayLater, dan Boost PayFlex pantas. Proses selamat, kadar rendah, dan tunai dalam hitungan minit. Hubungi kami sekarang!',
   keywords: [
-    'gestun shopeepay',
-    'cara mencairkan spaylater',
-    'jasa gestun terpercaya',
+    'tunaikan shopeepay',
+    'cara cashout spaylater',
+    'servis cashout dipercayai',
     'cashout grab paylater',
-    'gestun amanah',
-    'pencairan limit paylater',
+    'tunaikan limit paylater',
     'boost payflex cashout',
+    'gestun malaysia',
   ],
   authors: [{ name: 'CashoutMy Team' }],
   creator: 'CashoutMy',
@@ -33,27 +33,27 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: 'Cairkan Limit PayLater Anda - Aman & Cepat | CashoutMy',
+    title: 'Tunaikan Had PayLater Anda - Selamat & Pantas | CashoutMy',
     description:
-      'Butuh dana tunai? Kami bantu cairkan limit SPayLater & Grab PayLater Anda dengan proses transparan dan cepat.',
+      'Perlukan wang tunai? Kami bantu tunaikan had SPayLater & Grab PayLater anda dengan proses telus dan pantas.',
     url: DOMAIN,
     siteName: 'CashoutMy',
-    locale: 'id_ID',
+    locale: 'ms_MY', // Locale Malaysia
     type: 'website',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1556740758-90de374c12ad', // Ganti dengan OG Image custom Anda nanti (ukuran 1200x630)
+        url: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df',
         width: 1200,
         height: 630,
-        alt: 'Layanan Gestun Terpercaya CashoutMy',
+        alt: 'Servis Cashout PayLater Malaysia Dipercayai',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jasa Gestun Shopee PayLater & Cashout Terpercaya',
-    description: 'Pencairan limit PayLater kilat dan aman.',
-    images: ['https://images.unsplash.com/photo-1556740758-90de374c12ad'],
+    title: 'Servis Tunaikan Shopee PayLater & Grab PayLater',
+    description: 'Tunaikan had PayLater pantas dan selamat di Malaysia.',
+    images: ['https://images.unsplash.com/photo-1556740738-b6a63e27c4df'],
   },
   robots: {
     index: true,
@@ -66,19 +66,8 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  icons: {
-    // Ganti '/favicon.ico' dengan '/nama-file-anda.png'
-    // Pastikan diawali tanda slash '/' yang artinya folder public
-    icon: '/icon.ico',
-
-    // (Opsional) Icon untuk shortcut di desktop/android
-    shortcut: '/icon.ico',
-
-    // (Opsional) Icon khusus saat website di-bookmark di iPhone/iPad
-    apple: '/icon.ico',
-  },
   verification: {
-    google: 'GANTI_DENGAN_KODE_VERIFIKASI_GOOGLE_SEARCH_CONSOLE', // Opsional: Masukkan kode dari GSC
+    google: 'GANTI_DENGAN_KODE_VERIFIKASI_GOOGLE_SEARCH_CONSOLE',
   },
 };
 
@@ -89,8 +78,10 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang='id'
+      lang='ms'
       className='scroll-smooth'>
+      {' '}
+      {/* Lang set ke Bahasa Melayu */}
       <head>
         <link
           rel='canonical'

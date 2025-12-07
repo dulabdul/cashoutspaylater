@@ -9,7 +9,7 @@ export default function AdvantagesSection() {
     <Section
       id='advantages'
       className='bg-gray-50'>
-      <SectionTitle title='Keunggulan Kami' />
+      <SectionTitle title='Mengapa Kami' />
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {LANDING_DATA.advantages.map((item, index) => (
           <div

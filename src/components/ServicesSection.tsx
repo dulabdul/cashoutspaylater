@@ -9,7 +9,7 @@ export default function ServicesSection() {
       id='services'
       className='bg-white'>
       <SectionTitle
-        title='Layanan Kami'
+        title='Khidmat Kami'
         subtitle='Kami melayani pencairan berbagai jenis PayLater populer'
       />
       <div className='grid md:grid-cols-3 gap-8'>

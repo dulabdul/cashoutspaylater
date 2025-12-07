@@ -1,23 +1,30 @@
 import { LANDING_DATA, BRAND_CONFIG } from '@/constants/content';
 
 export default function JsonLd() {
-  const { hero, about } = LANDING_DATA;
-  const domain = 'https://cashoutspaylatermy.net'; // Ganti dengan domain asli jika berbeda
+  const { hero } = LANDING_DATA;
+  const domain = 'https://cashoutspaylatermy.net';
 
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
-    name: 'CashoutMy - Jasa Gestun Terpercaya',
-    description: hero.description,
+    name: 'CashoutMy - Servis Tunaikan PayLater Malaysia',
+    alternateName: 'CashoutMy Gestun Malaysia',
+    description:
+      'Servis tunaikan had SPayLater, Grab PayLater, dan Boost PayFlex menjadi wang tunai (cash) dengan kadar rendah dan proses pantas di Malaysia.',
     url: domain,
-    logo: `${domain}/logo.png`, // Pastikan ada file logo.png di folder public
-    image: 'https://images.unsplash.com/photo-1556740758-90de374c12ad', // Gambar Hero
-    telephone: '+6281234567890', // Sesuaikan dengan nomor WA di config
-    priceRange: '$$',
+    logo: `${domain}/logo.png`,
+    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df',
+    telephone: '+60199199650',
+    priceRange: 'RM',
+    areaServed: {
+      '@type': 'Country',
+      name: 'Malaysia',
+    },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Indonesia',
-      addressCountry: 'ID',
+      addressLocality: 'Kuala Lumpur',
+      addressRegion: 'Wilayah Persekutuan',
+      addressCountry: 'MY',
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -38,8 +45,38 @@ export default function JsonLd() {
       '@type': 'Offer',
       itemOffered: {
         '@type': 'Service',
-        name: 'Pencairan Limit PayLater (Shopee, Grab, Boost)',
+        name: 'Tunaikan Had PayLater (Shopee, Grab, Boost) kepada Tunai',
       },
+      priceCurrency: 'MYR',
+      availability: 'https://schema.org/OnlineOnly',
+      areaServed: 'Malaysia',
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Senarai Servis Cashout',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Cashout ShopeePay Later (SPayLater)',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Tunaikan Grab PayLater',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Convert Boost PayFlex to Cash',
+          },
+        },
+      ],
     },
   };
 

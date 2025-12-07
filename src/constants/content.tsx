@@ -21,7 +21,7 @@ export interface AdvantageItem {
 export interface TestimonialItem {
   id: number;
   caption: string;
-  image?: string; // Optional jika belum ada gambar
+  image?: string;
 }
 
 export interface LandingData {
@@ -57,97 +57,105 @@ export const BRAND_CONFIG = {
   },
   links: {
     whatsapp:
-      'https://wa.me/60199199650?text=Halo%20Admin,%20saya%20mau%20cairkan%20limit%20PayLater',
+      'https://wa.me/60199199650?text=Halo%20Admin,%20saya%20nak%20cashout',
     instagram: 'https://instagram.com/cashoutspaylatermy',
   },
   navLinks: [
     { name: 'Home', href: '#home' },
-    { name: 'Tentang Kami', href: '#about' },
+    { name: 'About Us', href: '#about' },
     { name: 'Why Choose Us', href: '#why-us' },
-    { name: 'Layanan', href: '#services' },
-    { name: 'Keunggulan', href: '#advantages' },
-    { name: 'Bukti Transaksi', href: '#testimonials' },
-    { name: 'Kontak', href: '#contact' },
+    { name: 'Service', href: '#services' },
+    { name: 'Advantage', href: '#advantages' },
+    { name: 'Testimonial', href: '#testimonials' },
+    { name: 'Contact', href: '#contact' },
   ],
 };
 
 // --- CONTENT DATA ---
 export const LANDING_DATA: LandingData = {
   hero: {
-    headline: 'Cairkan Limit ShopeePay Later Anda dalam Hitungan Menit',
+    headline: 'SPAYLATER BOOSTPAYFLEX',
     description:
-      'Butuh dana cepat tanpa ribet? Kami membantu Anda mencairkan limit SPayLater, Boost PayFlex, dan Grab PayLater dengan proses aman, cepat, dan transparan. Cocok untuk kebutuhan mendadak, modal usaha, atau keperluan harian.',
+      'CASHOUT KILAT, TAK PERLU MENUNGGU! Ada limit PayLater dalam SPayLater, Boost, dan Grab? Nak tukar jadi tunai?',
     cta: 'Cairkan Sekarang!',
   },
   about: {
-    title: 'Tentang Kami',
+    title: 'About Us',
     content:
-      'cashoutspaylatermy.net adalah layanan cashout/gestun terpercaya yang beroperasi dengan sistem profesional dan aman. Kami hadir untuk membantu Anda mengubah limit PayLater menjadi dana tunai secara cepat tanpa proses yang rumit. Dukungan CS responsif dan proses yang terstruktur membuat pengalaman Anda jauh lebih mudah dan nyaman.',
+      'Perkhidmatan Pencairan Wang dari Platform PayLater dengan Mudah dan Cepat bersama Cashout SPayLater! Adakah anda mencari cara yang mudah dan cepat untuk mendapatkan wang tunai daripada had SPayLater atau Boost PayLater anda? Cashout SPayLater adalah penyelesaian terbaik untuk anda! Kami menawarkan perkhidmatan yang pantas, selamat, dan berbaloi untuk memenuhi keperluan kecemasan atau kewangan anda. Dengan proses yang mudah dan telus, anda boleh menikmati wang tunai segera daripada platform SPayLater dan Boost PayLater anda.',
   },
   whyUs: {
     title: 'Why Choose Us',
     content:
-      'Memilih layanan kami berarti mengutamakan kecepatan, keamanan, dan kemudahan. Kami mengerti bahwa kebutuhan dana mendadak tidak bisa menunggu, dan karena itu seluruh proses kami dibuat se-efisien mungkin. Dengan reputasi terpercaya, support profesional, dan sistem yang terbukti aman, kami memastikan pengalaman cashout Anda berjalan lancar dari awal hingga akhir.',
+      'Memilih perkhidmatan kami bermaksud anda mengutamakan kepantasan, keselamatan dan kemudahan. Kami memahami bahawa keperluan dana yang mendesak tidak boleh ditangguhkan, sebab itu seluruh proses kami direka agar seefisien mungkin. Dengan reputasi yang boleh dipercayai, sokongan profesional serta sistem yang terbukti selamat, kami memastikan pengalaman cashout anda berjalan lancar dari awal hingga akhir.',
   },
   services: [
     {
       title: 'ShopeePay Later (SPayLater)',
-      desc: 'Cairkan limit SPayLater Anda kapan saja dengan proses cepat dan panduan lengkap dari tim kami.',
+      desc: 'Cairkan limit SPayLater anda pada bila-bila masa dengan proses yang pantas serta panduan lengkap daripada pasukan kami.',
       icon: <CreditCard className='w-10 h-10 text-[#EE4D2D]' />,
     },
     {
       title: 'Boost PayFlex',
-      desc: 'Konversi limit Boost PayFlex menjadi dana tunai secara aman dan efisien.',
+      desc: 'Tukar limit Boost PayFlex anda kepada wang tunai dengan cara yang selamat dan efisien.',
       icon: <Zap className='w-10 h-10 text-[#EE4D2D]' />,
     },
     {
       title: 'Grab PayLater',
-      desc: 'Nikmati layanan pencairan limit Grab PayLater tanpa hambatan dan tanpa menunggu lama.',
+      desc: 'Nikmati perkhidmatan pencairan limit Grab PayLater tanpa sebarang halangan dan tanpa perlu menunggu lama.',
       icon: <Clock className='w-10 h-10 text-[#EE4D2D]' />,
     },
   ],
+
   advantages: [
-    { title: 'Proses Cepat', desc: 'Dana cair hanya dalam hitungan menit.' },
+    { title: 'Proses Pantas', desc: 'Wang cair hanya dalam beberapa minit.' },
     {
-      title: 'Aman & Terpercaya',
-      desc: 'Sistem transaksi jelas, tanpa biaya tersembunyi.',
+      title: 'Selamat & Dipercayai',
+      desc: 'Sistem transaksi yang jelas tanpa caj tersembunyi.',
     },
     {
-      title: 'Panduan Step-by-Step',
-      desc: 'Dibantu CS sampai transaksi berhasil.',
+      title: 'Panduan Langkah demi Langkah',
+      desc: 'Dibantu oleh CS sehingga transaksi berjaya.',
     },
-    { title: 'Rate Terbaik', desc: 'Tarif kompetitif dan ramah pelanggan.' },
     {
-      title: 'Privasi Terjaga',
-      desc: 'Data Anda aman dan tidak dibagikan ke pihak lain.',
+      title: 'Kadar Terbaik',
+      desc: 'Kadar yang kompetitif dan mesra pelanggan.',
     },
-    { title: 'Layanan 24/7', desc: 'Kami siap membantu kapan pun Anda butuh.' },
+    {
+      title: 'Privasi Terpelihara',
+      desc: 'Data anda selamat dan tidak dikongsi kepada pihak lain.',
+    },
+    {
+      title: 'Perkhidmatan 24/7',
+      desc: 'Kami sedia membantu pada bila-bila masa anda perlukan.',
+    },
   ],
+
   testimonials: [
     {
       id: 1,
-      caption: 'Testimoni 1 Customer Kami',
-      // Pastikan file gambar ada di folder: public/images/testimoni/
+      caption: 'Testimoni 1 Pelanggan Kami',
       image: '/images/testimoni4.jpeg',
     },
     {
       id: 2,
-      caption: 'Testimoni 2 Customer Kami',
+      caption: 'Testimoni 2 Pelanggan Kami',
       image: '/images/testimoni1.jpeg',
     },
     {
       id: 3,
-      caption: 'Testimoni 3 Customer Kami',
+      caption: 'Testimoni 3 Pelanggan Kami',
       image: '/images/testimoni2.jpeg',
     },
     {
       id: 4,
-      caption: 'Testimoni 4 Customer Kami',
+      caption: 'Testimoni 4 Pelanggan Kami',
       image: '/images/testimoni3.jpeg',
     },
   ],
+
   ctaBottom: {
-    headline: 'Butuh Dana Sekarang? Hubungi Kami!',
+    headline: 'Perlu Dana Segera? Hubungi Kami!',
     button: 'Chat Admin Sekarang',
   },
 };

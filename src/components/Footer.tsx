@@ -12,8 +12,8 @@ export default function Footer() {
             cashoutspaylatermy.net
           </span>
           <p className='text-gray-400'>
-            Solusi pencairan limit PayLater terpercaya, cepat, dan amanah.
-            Melayani 24 jam dengan rate kompetitif.
+            Solusi pencairan limit PayLater yang dipercayai, cepat dan amanah.
+            Beroperasi 24 jam dengan kadar yang kompetitif.
           </p>
         </div>
         <div>
