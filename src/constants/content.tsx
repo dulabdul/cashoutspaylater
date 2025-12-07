@@ -77,7 +77,7 @@ export const LANDING_DATA: LandingData = {
     headline: 'SPAYLATER BOOSTPAYFLEX',
     description:
       'CASHOUT KILAT, TAK PERLU MENUNGGU! Ada limit PayLater dalam SPayLater, Boost, dan Grab? Nak tukar jadi tunai?',
-    cta: 'Cairkan Sekarang!',
+    cta: 'Cashout Sekarang!',
   },
   about: {
     title: 'About Us',
