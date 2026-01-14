@@ -57,7 +57,7 @@ export const BRAND_CONFIG = {
   },
   links: {
     whatsapp:
-      'https://wa.me/60199199650?text=Halo%20Admin,%20saya%20nak%20cashout',
+      'https://wa.me/60135228601?text=Halo%20Admin,%20saya%20nak%20cashout',
     instagram: 'https://instagram.com/cashoutspaylatermy',
   },
   navLinks: [

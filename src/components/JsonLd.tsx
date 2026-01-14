@@ -14,7 +14,7 @@ export default function JsonLd() {
     url: domain,
     logo: `${domain}/logo.png`,
     image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df',
-    telephone: '+60199199650',
+    telephone: '+60135228601',
     priceRange: 'RM',
     areaServed: {
       '@type': 'Country',
